@@ -5,17 +5,20 @@ Questo bot raccoglie i prezzi di alcuni prodotti su vari siti di e-commerce e in
 Per utilizzare il bot, è necessario:
 Avere un account Telegram.
 
-Creare un bot Telegram tramite BotFather e ottenere il token del bot.
+Creare un bot Telegram tramite *BotFather* e ottenere il token del bot.
 
-Avere Python 3 installato sul proprio computer.
+Avere *Python 3* installato sul proprio computer.
 
 Installare le dipendenze del progetto tramite il comando **pip install -r requirements.txt**.
 
 ## Utilizzo
 Clonare il repository in una cartella sul proprio computer.
 
-Inserire nel file python il token del bot e id del proprio account telegram
-
+Creare un file **.env** nella stessa cartella del codice sorgente e inserire il token del bot e id dell'utente come segue: 
+ ```
+  TELEGRAM_BOT_TOKEN = '<token bot>'
+  TELEGRAM_USER_ID = '<user id>'
+ ```
 Inserire i siti web e i prodotti di interesse nel file data con il seguente protocollo:
   ```
   <nome sito web>-<prodotto>
